@@ -136,16 +136,21 @@ body{
     text-decoration: underline;
 }
 
-.header .logo i{
+
+.header .logo img {
+    width: 14rem;
+    height: 13rem;
     padding: 0.5rem;
+    object-fit: contain;
 }
 
-.header .fa-bars{
+.header .fa-bars {
     color: #fff;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 4rem;
     display: none;
 }
+
 
 .home{
     min-height: 100vh;
@@ -1355,3 +1360,94 @@ body{
             width: 100%;
         }
 }
+
+
+
+
+
+ /* ====== Contact Form CSS (Scoped) ====== */
+.project-contact {
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+.project-contact .service-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.project-contact form {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.project-contact .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.project-contact .form-group input,
+.project-contact .form-group select,
+.project-contact .form-group textarea {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.project-contact .form-group input:focus,
+.project-contact .form-group select:focus,
+.project-contact .form-group textarea:focus {
+    border-color: #00aaff;
+}
+
+.project-contact .icon,
+.project-contact .icon-textarea {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    color: #00aaff;
+}
+
+.project-contact textarea {
+    resize: none;
+}
+
+.project-contact .contact-btn {
+    background: #00aaff;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-contact .contact-btn:hover {
+    background: #0077cc;
+}
+
+.project-contact .contact-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .project-contact .contact-image {
+        display: none;
+    }
+
+    .project-contact form {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+
+
+
